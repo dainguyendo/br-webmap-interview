@@ -220,6 +220,19 @@ mainView.ui.add(texasLegend, "bottom-left");
 
 
   document.getElementById("br-logo").addEventListener("click", goToOffice);
+  document.getElementById("nav-texas").addEventListener("click", goToTexas);
+
+  function goToTexas(){
+    mainView.goTo(
+      {
+        zoom: 8,
+        center: [-98.09834411620189, 27.03680088987091],
+      }, {
+        animate: true,
+        duration: 500
+      }
+    )
+  }
 
   function goToOffice(){
     mainView.goTo(

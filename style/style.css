@@ -63,7 +63,7 @@ div#map {
 }
 div#map-title {
   width: 500px;
-  height: 50px;
+  height: 200px;
   float: right;
   text-align: right;
   color: #0059b3;
@@ -75,16 +75,34 @@ div#text-container {
   width: 900px;
   height: auto;
   padding: 15px 50px 15px 75px;
+  background-color: #f2f2f2;
 }
 div#text-content {
   text-align: justify;
+  font-size: 18px;
 }
 ul#list-features {
-  font-size: 20;
+  font-size: 15px;
   text-align: left;
 }
 
+button#nav-texas{
+  background-color:#0059b3;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  transition-duration: 0.4s;
+}
 
+button#nav-texas:hover {
+  background-color: #ffffff;
+  color: black;
+}
 
 /* ---------------HOME BUTTON CSS--------------- */
 .esri-widget-button{
