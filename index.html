@@ -1,0 +1,47 @@
+<!doctype html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <title>Blue Raster Application</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body id="main-content">
+    <div class="color-bands">
+      <div class="color-band" style="background-color: #2980b9;"></div><div class="color-band" style="background-color: #a9cce3;"></div><div class="color-band" style="background-color: #7fb3d5;"></div><div class="color-band" style="background-color: #5499c7;"></div>
+    </div>
+    <div id="header-container">
+      <div id="br-logo">
+        <img src="imgs/logo-small.png" alt="Blue Raster Logo" id="br-logo-img">
+      </div>
+      <a class="icon-container" href="https://developers.arcgis.com/javascript/latest/api-reference/index.html">
+        <img src="imgs/javascript-api.jpg" alt="jsAPI-logo" id="jsAPI-img" class="icon">
+      </a>
+      <a class="icon-container" href="https://github.com">
+        <img src="imgs/github.png" alt="github-logo" id="github-img" class="icon">
+      </a>
+    </div>
+    <div id="map-container">
+      <div id="map"></div>
+      <div id="map-title"><b>ArcGIS JS API Web Map App</b></div>
+    </div>
+    <div id="text-container">
+      <div id="text-content">
+        <p>This web map application was created for a technical interview at Blue Raster. The assignment was done utilizing Esri's JavaScript 4.0 API. The goal of the assignment was to demonstrate a familiarity with the API and demonstrate various capabilities of myself in the API environment. At the top of the page, quick links are available to the github repository and the JS API documentation.
+        <ul id="list-features"> <b>What's included</b>:
+          <li> An interactive map with an initial view of Southern Texas depicting proportions of Hispanic Population relative to the Total.</li>
+          <li> A "Home" button that recenter's the view to Washington, D.C.</li>
+          <li> A toggle basemap widget.</li>
+          <li> Zoom in close enough to the Blue Raster Office or click on the logo and a graphic symbol will appear. </li>
+          <li> When clicking a point on the map a popup window displaying lat/long appears. </li>
+        </ul>
+      </div>
+    </div>
+    <div class="color-bands">
+      <div class="color-band" style="background-color: #2980b9;"></div><div class="color-band" style="background-color: #a9cce3;"></div><div class="color-band" style="background-color: #7fb3d5;"></div><div class="color-band" style="background-color: #5499c7;"></div>
+    </div>
+    <script src="https://js.arcgis.com/4.0/"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
