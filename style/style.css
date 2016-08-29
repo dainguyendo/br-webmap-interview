@@ -29,6 +29,10 @@ div#header-container * {
 div#br-logo {
   float: left;
   margin: 0px 60px 0px 0px;
+  transition-duration: 0.4s;
+}
+div#br-logo:hover {
+  opacity: .5;
 }
 img#br-logo-img {
   display: block;
@@ -40,6 +44,10 @@ img#br-logo-img {
 a.icon-container {
   float: right;
   margin: 0px 40px 0px 40px;
+  transition-duration: 0.4s;
+}
+a.icon-container *:hover{
+  opacity: .5;
 }
 img#github-img {
   width: 50px;
@@ -68,11 +76,11 @@ div#map-title {
   text-align: right;
   color: #0059b3;
   font-size: 75px;
-  padding: 0px 60px 0px 0px;
+  padding: 40px 100px 0px 0px;
 }
 
 div#text-container {
-  width: 900px;
+  width: 1100px;
   height: auto;
   padding: 15px 50px 15px 75px;
   background-color: #f2f2f2;
