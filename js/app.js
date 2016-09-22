@@ -175,11 +175,16 @@ require([
   document.getElementById("nav-texas").addEventListener("click", goToTexas);
 //add the blue raster office graphic when scale is close enough
   mainView.watch("viewpoint.scale", function(newScale, oldScale){
-    if (newScale <= 35000) {
-      mainView.graphics.add(brGraphic);
-    }
-    if (newScale > 65000) {
-      mainView.graphics.remove(brGraphic);
+    // if (newScale <= 35000) {
+    //   if (mainView.graphics.length == 0){
+    //     mainView.graphics.add(brGraphic);
+    //     console.log(mainView.graphics.length);
+    //   }
+    // }
+    if (newScale > 35000) {
+      if (mainView.graphics.length > 0) {
+        mainView.graphics.remove(brGraphic);
+      }
     }
   });
 //display lat and long on click function
@@ -226,7 +231,11 @@ require([
         animate: true,
         duration: 500
       }
-    )
+    ).then(function(){
+      mainView.graphics.add(brGraphic)
+    }
+    );
+
   };
 //adding elements to the map UI
   mainView.ui.add(texasLegend, "bottom-left");
